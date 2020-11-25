@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 1000px;
+}
+section{
+	padding: 50px;
+}
+p{
+	font-weight: 300;
+	color: #333;
+}
+span{
+	color: #de8d37; 
+	font-size: 1.3em;
+}
+.judulBagian{
+	font-size: 2em;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.jd{
+	margin-bottom: 0;
+}
+.isi{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 100px;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 1;
+	display: flex;
+}
+header.d-sticky{
+	background: #fff;
+	padding: 5px 100px;
+}
+header .nama{
+	color: #fff;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-decoration: none;
+}
+header.d-sticky .nama{
+	color: #333;
+}
+header .nav{
+	position: relative;
+	display: flex;
+}
+header .nav li{
+	list-style: none;
+	margin-left: 32px;
+}
+header .nav li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+}
+header.d-sticky .nav li a{
+	color: #333;
+}
+header .nav li a:hover{
+	color: #de8d37;
+}
+
+.atas{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../image/hotell.png);
+	background-size: cover;
+}
+.atas .isiAtas{
+	max-width: 900px;
+	text-align: center;
+}
+.atas .isiAtas h2{
+	font-size: 5em;
+	color: #fff;
+}
+.atas .isiAtas p{
+	font-size: 1.1em;
+	color: #fff;
+}
+.btn{
+	font-size: 1em;
+	color: #fff;
+	background-color: #de8d37;
+	box-shadow: 0 5px #deb743;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 50px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 3px;
+	transition: 0.5s;
+}
+.btn:active{
+	position: relative;
+	top: 7px;
+	box-shadow: none;
+}
+
+.card{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.card .cardIsi p{
+	line-height: 30px;
+}
+.card .cardIsi{
+	position: relative;
+	width: 50%;
+}
+.card .cardIsi .gambar{
+	position: relative;
+	width: 90%;
+	min-height: 300px;
+	margin-top: 20px;
+}
+.card .cardIsi .gambar img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 350px;
+	margin: 50px;
+}
+
+.fasilitas .fsKotak{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.fasilitas .fsKotak .fsCard{
+	width: 320px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.13);
+}
+.fasilitas .fsKotak .fsCard .gambar{
+	position: relative;
+	width: 100%;
+	height: 260px;
+}
+.fasilitas .fsKotak .fsCard .gambar:hover{
+	opacity: 0.5;
+}
+
+.fasilitas .fsKotak .fsCard .gambar img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.teks{
+	padding-top: 15px;
+	text-align: center;
+}
+
+h3{
+	font-weight: 400;
+	color: #333;
+}
+
+.figure .fCard{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+}
+.figure .fCard .box{
+	width: 250px;
+	margin: 10px;
+	border: 1px solid #808080;
+	padding: 10px;
+}
+.figure .fCard .box .gambar{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.figure .fCard .box .gambar img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.visitor{
+	background-image: url(../image/bg5.png);
+	background-size: cover;
+}
+.visitor .kotakV{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 50px;
+}
+.visitor .kotakV .cardV{
+	width: 480px;
+	margin: 20px;
+	padding: 5px 30px;
+	background: #fff;
+	border-radius: 4px;
+	border-bottom: 4px solid #de8d37;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.visitor .kotakV .cardV .cardImg{
+	position: relative;
+	width: 500px;
+	height: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.visitor .kotakV .cardV .cardImg img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.visitor .kotakV .cardV .cardTeks{
+	padding-top: 30px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.visitor .kotakV .cardV .cardTeks p{
+	line-height: 20px;
+}
+.visitor .kotakV .cardV h3{
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.wrap{
+	position: relative;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	max-width: 500px;
+	width: 60%;
+	padding: 20px;
+	background: #de8d37;
+}
+.wrap .data{
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+}
+.wrap .data .dataK{
+	display: flex;
+	flex-direction: row;
+	margin-right: 7px;
+}
+.wrap img{
+	width: 20px;
+}
+.wrap p{
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.wrap .data input[type="text"],
+.wrap textarea{
+	width: 100%;
+	border: 1px solid #808080;
+	padding: 10px;
+	font-size: 16px;
+}
+.wrap textarea{
+	height: 100px;
+	resize: none;
+}
+.wrap .button input[type="submit"]{
+	border: 0;
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px;
+	background-color: #333;
+	opacity: 0.5;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+.wrap .button input[type="submit"]:hover{
+	opacity: 1;
+}
+.wrap #error{
+	margin-bottom: 20px;
+	padding: 0;
+	background: #e82f41;
+	color: #fff;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+footer{
+	text-align: center;
+	border-top: 1px solid #de8d37;
+	padding: 20px;
+	margin-top: 60px;
+}
+
+@media(max-width: 1024px){
+	.wrap .data .dataK .ilang{
+		display: none;
+	}
+}
+
+@media(max-width: 940px){
+	header,
+	header.d-sticky{
+		padding: 10px 50px;
+	}
+
+	.atas .isiAtas h2 {
+    	font-size: 4em;
+	}
+
+	.card{
+		flex-direction: column;
+	}
+	.about .card .cardIsi{
+		width: 100%;
+	}
+	.card .cardIsi .gambar {
+    	width: 80%;
+    	left: 5%;
+	}
+}
+
+@media(max-width: 930px){
+	header .nav{
+		display: none;
+	}
+	.menuIlang{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(../image/menuu.png);
+		background-size: 35px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.menuIlang.klik{
+		background: url(../image/close.png);
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	header .nav.klik{
+		width: 100%;
+		height: calc(100% - 74px);
+		position: fixed;
+		top: 74px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+	}
+	header .nav li{
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	header .nav li a{
+		color: #333;
+		font-size: 1.6em;
+		font-weight: 400;
+	}
+
+	.judulBagian{
+		text-align: center;
+		font-size: 1.7em;
+	}
+
+	.wrap .tes{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.wrap .data .dataK{
+		margin-top: 5px;
+	}
+}
+
+@media(max-width: 754px){
+	.card .cardIsi .gambar img{
+		height: 96%;
+	}
+	.wrap{
+		width: 400px;
+	}
+}
+
+@media(max-width: 525px){
+	header{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.atas .isiAtas h2{
+		font-size: 3em;
+	}
+	.atas .isiAtas p{
+		font-size: 0.8em;
+	}
+
+	.card .cardIsi .gambar{
+		display: none;
+	}
+
+	.visitor .kotakV .cardV{
+		width: 350px;
+		flex-direction: column;
+	}
+
+	.wrap{
+		width: 100%;
+	}
+}
+
+@media(max-width:384px){
+	.visitor .kotakV .cardV{
+		width: 100%;
+	}
+}
